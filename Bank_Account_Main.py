@@ -1,0 +1,36 @@
+from OOP.Bank_Account import BankAccount
+
+account1 = BankAccount('Stuard Razel', 'RO0001')
+account2 = BankAccount('John Rizer', 'RO0002')
+account3 = BankAccount('James Storm', 'RO0003')
+
+account1.account_activation(7777)
+print('---------------------------------')
+
+account2.account_activation(7777)
+print('---------------------------------')
+
+account3.account_activation(7777)
+print('---------------------------------')
+
+account1.feed_account(300)
+print('---------------------------------')
+account2.feed_account(700)
+account2.feed_account(300)
+print('---------------------------------')
+account3.feed_account(1000)
+print('---------------------------------')
+account1.balance_query()
+print('---------------------------------')
+account2.balance_query()
+print('---------------------------------')
+account3.balance_query()
+print('---------------------------------')
+account1.card_payment(500)
+account1.card_payment(300)
+print('---------------------------------')
+account2.card_payment(100)
+account2.card_payment(200)
+print('---------------------------------')
+account3.card_payment(500)
+account3.card_payment(300)
